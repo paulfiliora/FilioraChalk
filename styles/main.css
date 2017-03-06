@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+/*	font-family: 'Raleway', sans-serif;*/
+/*	background-color: #1E1E1E;*/
+}
+
+.profile-image {
+	min-width:150px;
+}
+
+.landingImage {
+	min-height: 800px;
+	background-position: center;
+	background-size: cover;
+	background-image:url('../assets/images/dandelion blue.jpg');
+}
+
+.nav {
+	color: white;
+}
+
+.topRow {
+	min-height: 30px;
+	background-color: #1E1E1E;
+}
+
+.col {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.boxes {
+	min-width: 30.3333%;
+	min-height: 160px;
+	box-sizing: border-box;
+	border-radius: 25px;
+}
+
+.boxgrid {
+	min-width: 25%;
+	display: inline-block;
+	align-self: center;
+	margin: 0 auto;
+}
+
+.boxText {
+/*	color: white;*/
+	text-align: center;
+	padding: 10px;
+	min-height: 150px;
+}
+
+.titleFlair {
+	font-family: 'Fredericka the Great', cursive;
+	color: #494949;
+	font-size: 2em;
+	text-align: center;
+}
+
+.profileBar {
+	background-color: #1E1E1E;
+	align-self: center;
+	opacity: .75;
+	border-radius: 10px;
+	padding: 10px;
+	min-height: 120px;
+}
+
+.imgGrid {
+	border-radius: 30px;
+	align-self: center;
+}
+
+.wrapper {
+	max-width: 1100px !important;
+	margin: 0 auto !important;
+}
+
+.slogan {
+	text-align: center;
+	padding: 200px 0px 200px 0px;
+	font-size: xx-large;
+}
+
+.sloganGallery {
+	text-align: center;
+	padding: 150px 0px 150px 0px;
+	font-size: xx-large;
+}
+
+.slogan_larger_text {
+	font-size: larger;
+	font-weight: bold;
+}
+
+.navmenu {
+	padding: 25px 25px 0px 0px;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: large;
+	color: inherit;
+/*	float: left;*/
+	display: inline-block;
+}
+
+.large_screen_only {
+	display: none;
+	
+}
+
+
+@media (min-width: 768px) {
+	.small_screen_only {
+		display: none;
+	}
+	.large_screen_only {
+		display: block;
+	} 
+}
+
+.wrapper_bar {
+	margin: 50px;
+	
+}
+
+.about_boxgrid {
+	max-width: 65%;
+	display: inline-block;
+	align-self: center;
+	margin: 0 auto;
+}
+
+.wrapper_gallery {
+	min-height: 100px;
+	background-position: center;
+	background-size: cover;
+	background-image:url('https://static.pexels.com/photos/149621/pexels-photo-149621.jpeg');
+	margin: 20px;
+	
+}
+
+.mainImage {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.mainImageContainer {
+	max-width: 350px;
+	margin: auto;
+}
+
+.aboutMe {
+	background-color: #E9E6E0;
+}
+
+.sectionGallery {
+	background-color: #D0DDE3;
+}
+
+.sectionName {
+	font-family: 'Fredericka the Great', cursive;
+	color: #494949;
+	font-size: 2em;
+/*	background-imagee: url(file:///C:/Users/plora/OneDrive/Documents/NYCDA/Assignments/Filiora/assets/images/menu-hover.png)*/
+/*	background-repeat: no-repeat;*/
+    /* background-size: contain; */
+/*    background-size: 100% auto !important;*/
+/*    background-position: center center;*/
+}
+
+.sectionHeader {
+		padding-top: 30px;
+}
+
+.ui.fixed.sticky + p {
+  margin-top: 39px;
+}
+.headerWrapper {
+/*	margin: auto !important;*/
+}
+
+.topHeader {
+    transition: all .6s ease-in-out;
+/*    background-color:transparent;*/
+	color: white;
+	position: fixed;
+	width: 100%;
+/*	margin-left: 250px;*/
+/*	display: block;*/
+/*	clear: both;*/
+}
+
+.topHeader.active {
+/*    background-color: #D0DDE3 !important;*/
+	color: black !important;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar {
+	padding-left: 48%;
+}
+
+.typewriter {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+/*  border-right: .15em solid white;  The typwriter cursor */
+	min-height: 50px;
+	padding-top: 20px;
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+		typing 4s steps(40, end),
+		blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
